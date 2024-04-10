@@ -1,113 +1,204 @@
+import { Merriweather } from "next/font/google";
 import Image from "next/image";
+import * as FaIcons from "react-icons/fa6";
+
+const merriweather = Merriweather({
+  weight: ["300", "400", "700", "900"],
+  subsets: ["latin-ext"],
+});
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <>
+      <div className="h-[100vh] bg-black text-white">
+        <header className="flex justify-between p-12">
+          <div>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
+              src="/logo.svg"
+              alt="Logo"
+              className=" scale-75 md:scale-90 lg:scale-100 xl:scale-100"
+              width={120}
+              height={32}
               priority
             />
-          </a>
+          </div>
+          <div className="flex items-center gap-5 text-2xl pr-8 hover:cursor-pointer hover:text-gray-300 transition duration-200 scale-75 md:scale-90 lg:scale-100 xl:scale-100">
+            <div className="text-xl font-semibold">MENU</div>
+            <div>
+              <FaIcons.FaBars />
+            </div>
+          </div>
+        </header>
+        <div className="w-full flex justify-between">
+          <div className="w-full lg:w-3/5 xl:w-3/5 bg-green-500">
+            <div
+              className={
+                merriweather.className + " w-full text-5xl font-bold bg-red-400"
+              }
+            >
+              <div className={merriweather.className}>Hello folks, we are</div>
+              <div>E-CELL IET Lucknow</div>
+            </div>
+            <div className="flex">
+              <hr className="w-16" />
+              <div className="">
+                We create stunning digital experiences that will help your
+                business stand out.
+              </div>
+            </div>
+          </div>
+          <div className="hidden lg:block xl:block bg-orange-400 w-2/5">
+            <ul className="">
+              <li>
+                <a className="" href="#">
+                  About<span>who we are</span>
+                </a>
+              </li>
+              <li>
+                <a className="" href="#">
+                  Services<span>what we do</span>
+                </a>
+              </li>
+              <li>
+                <a className="" href="#">
+                  Contact<span>get in touch</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="flex">
+          <div className="w-full bg-gray-400 flex justify-between">
+            <ul className="flex ">
+              <li>Follow Us</li>
+              <hr className="w-6" />
+              <li>facebook</li>
+              <li>Twitter</li>
+              <li>LinkedIn</li>
+            </ul>
+            <div className="flex">
+              <div>SCROLL DOWN</div>
+              <div className="w-14 h-14 bg-white rounded-full text-black text-center">
+                &#8595;
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <hr />
+      <div className="w-full">
+        <div className="w-[95%] lg:w-4/5 xl:w-4/5 mx-auto my-32">
+          <div className="w-full tracking-widest text-pink-500">
+            / WHO WE ARE
+          </div>
+          <div
+            className={
+              merriweather.className +
+              " w-full h-60 lg:h-72 xl:h-72 mt-4 font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-6xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug"
+            }
+          >
+            We are a group of design driven individuals passionate about
+            creating beautiful UI designs.
+          </div>
+          <div className="w-full lg:mt-12 xl:mt-12 mb-20 text-2xl tracking-widest leading-relaxed text-gray-600 dark:text-gray-300">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse.
+          </div>
+          <div className="w-full lg:flex xl:flex">
+            <div className="w-full lg:w-1/2 xl:w-1/2 my-6">
+              <div className="flex items-center">
+                <div className="h-12 w-12 rounded-full bg-teal-400 text-center text-2xl pt-2">
+                  1
+                </div>
+                <div className="text-3xl font-semibold ml-6">Define</div>
+              </div>
+              <div className="mt-5 pb-5 w-[calc(100%-48px)] mx-auto pl-12 border-l text-gray-600 dark:text-gray-300 border-gray-600 dark:border-gray-300 text-lg tracking-widest leading-relaxed">
+                Quos dolores saepe mollitia deserunt accusamus autem
+                reprehenderit. Voluptas facere animi explicabo non quis magni
+                recusandae. Numquam debitis pariatur omnis facere unde.
+                Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore
+                quasi deserunt ab.
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2 xl:w-1/2 my-6">
+              <div className="flex items-center">
+                <div className="h-12 w-12 rounded-full bg-teal-400 text-center text-2xl pt-2">
+                  2
+                </div>
+                <div className="text-3xl font-semibold ml-6">Design</div>
+              </div>
+              <div className="mt-5 pb-5 w-[calc(100%-48px)] mx-auto pl-12 border-l text-gray-600 dark:text-gray-300 border-gray-600 dark:border-gray-300 text-lg tracking-widest leading-relaxed">
+                Quos dolores saepe mollitia deserunt accusamus autem
+                reprehenderit. Voluptas facere animi explicabo non quis magni
+                recusandae. Numquam debitis pariatur omnis facere unde.
+                Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore
+                quasi deserunt ab.
+              </div>
+            </div>
+          </div>
+          <div className="w-full lg:flex xl:flex">
+            <div className="w-full lg:w-1/2 xl:w-1/2 my-6">
+              <div className="flex items-center">
+                <div className="h-12 w-12 rounded-full bg-teal-400 text-center text-2xl pt-2">
+                  3
+                </div>
+                <div className="text-3xl font-semibold ml-6">Build</div>
+              </div>
+              <div className="mt-5 pb-5 w-[calc(100%-48px)] mx-auto pl-12 border-l text-gray-600 dark:text-gray-300 border-gray-600 dark:border-gray-300 text-lg tracking-widest leading-relaxed">
+                Quos dolores saepe mollitia deserunt accusamus autem
+                reprehenderit. Voluptas facere animi explicabo non quis magni
+                recusandae. Numquam debitis pariatur omnis facere unde.
+                Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore
+                quasi deserunt ab.
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2 xl:w-1/2 my-6">
+              <div className="flex items-center">
+                <div className="h-12 w-12 rounded-full bg-teal-400 text-center text-2xl pt-2">
+                  4
+                </div>
+                <div className="text-3xl font-semibold ml-6">Launch</div>
+              </div>
+              <div className="mt-5 pb-5 w-[calc(100%-48px)] mx-auto pl-12 border-l text-gray-600 dark:text-gray-300 border-gray-600 dark:border-gray-300 text-lg tracking-widest leading-relaxed">
+                Quos dolores saepe mollitia deserunt accusamus autem
+                reprehenderit. Voluptas facere animi explicabo non quis magni
+                recusandae. Numquam debitis pariatur omnis facere unde.
+                Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore
+                quasi deserunt ab.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="bg-zinc-200 dark:bg-zinc-950 w-full">
+        <div className="w-[95%] lg:w-4/5 xl:w-4/5 mx-auto py-32">
+          <div className="w-full tracking-widest text-pink-500">
+            / WHAT WE DO
+          </div>
+          <div
+            className={
+              merriweather.className +
+              " w-full h-56 lg:h-72 xl:h-72 mt-4 font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-6xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug"
+            }
+          >
+            We have everything you need to launch and grow a successful digital business.
+          </div>
+          <div className="w-full mb-20 text-2xl tracking-widest leading-relaxed text-gray-600 dark:text-gray-300">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse.
+          </div>
+        </div>
       </div>
-    </main>
+    </>
   );
 }
