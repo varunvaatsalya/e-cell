@@ -1,6 +1,7 @@
 import { Merriweather } from "next/font/google";
 import Image from "next/image";
 import * as FaIcons from "react-icons/fa6";
+import * as TbIcons from "react-icons/tb";
 
 const merriweather = Merriweather({
   weight: ["300", "400", "700", "900"],
@@ -186,7 +187,8 @@ export default function Home() {
               " w-full h-56 lg:h-72 xl:h-72 mt-4 font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-6xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug"
             }
           >
-            We have everything you need to launch and grow a successful digital business.
+            We have everything you need to launch and grow a successful digital
+            business.
           </div>
           <div className="w-full pt-8 mb-20 text-2xl tracking-widest leading-relaxed text-gray-600 dark:text-gray-300">
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
@@ -196,6 +198,52 @@ export default function Home() {
             exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit
             esse.
+          </div>
+          <div className="w-full lg:flex xl:flex">
+            <div className="w-full lg:w-1/3 xl:w-1/3 px-4 my-10">
+              <div className="h-16 w-16 text-teal-400 text-7xl">
+                <TbIcons.TbBrandAbstract />
+              </div>
+              <div className=" my-6 text-2xl font-semibold">Brand Identity</div>
+              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!</div>
+            </div>
+            <div className="w-full lg:w-1/3 xl:w-1/3 px-4 my-10">
+              <div className="h-16 w-16 text-teal-400 text-7xl">
+                <TbIcons.TbBrandAmd />
+              </div>
+              <div className=" my-6 text-2xl font-semibold">Illustration</div>
+              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!</div>
+            </div>
+            <div className="w-full lg:w-1/3 xl:w-1/3 px-4 my-10">
+              <div className="h-16 w-16 text-teal-400 text-7xl">
+                <TbIcons.TbBrandBitbucket />
+              </div>
+              <div className=" my-6 text-2xl font-semibold">Web Design</div>
+              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!</div>
+            </div>
+          </div>
+          <div className="w-full lg:flex xl:flex">
+            <div className="w-full lg:w-1/3 xl:w-1/3 px-4 my-10">
+              <div className="h-16 w-16 text-teal-400 text-7xl">
+                <TbIcons.TbBrandCakephp />
+              </div>
+              <div className=" my-6 text-2xl font-semibold">Product Strategy</div>
+              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!</div>
+            </div>
+            <div className="w-full lg:w-1/3 xl:w-1/3 px-4 my-10">
+              <div className="h-16 w-16 text-teal-400 text-7xl">
+                <TbIcons.TbBrandDribbble />
+              </div>
+              <div className=" my-6 text-2xl font-semibold">UI/UX Design</div>
+              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!</div>
+            </div>
+            <div className="w-full lg:w-1/3 xl:w-1/3 px-4 my-10">
+              <div className="h-16 w-16 text-teal-400 text-7xl">
+                <TbIcons.TbBrandFeedly />
+              </div>
+              <div className=" my-6 text-2xl font-semibold">Mobile Development</div>
+              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!</div>
+            </div>
           </div>
         </div>
       </div>
