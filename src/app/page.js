@@ -100,7 +100,7 @@ export default function Home() {
             We are a group of design driven individuals passionate about
             creating beautiful UI designs.
           </div>
-          <div className="w-full lg:mt-12 xl:mt-12 mb-20 text-2xl tracking-widest leading-relaxed text-gray-600 dark:text-gray-300">
+          <div className="w-full pt-10 lg:mt-12 xl:mt-12 mb-20 text-2xl tracking-widest leading-relaxed text-gray-600 dark:text-gray-300">
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
             Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet,
             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -188,7 +188,7 @@ export default function Home() {
           >
             We have everything you need to launch and grow a successful digital business.
           </div>
-          <div className="w-full mb-20 text-2xl tracking-widest leading-relaxed text-gray-600 dark:text-gray-300">
+          <div className="w-full pt-8 mb-20 text-2xl tracking-widest leading-relaxed text-gray-600 dark:text-gray-300">
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
             Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet,
             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
