@@ -94,7 +94,7 @@ export default function Home() {
           <div
             className={
               merriweather.className +
-              " w-full h-60 lg:h-72 xl:h-72 mt-4 font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-6xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug"
+              " w-full h-64 lg:h-72 xl:h-72 mt-4 font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-6xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug"
             }
           >
             We are a group of design driven individuals passionate about
