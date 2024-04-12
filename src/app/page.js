@@ -322,7 +322,7 @@ export default function Home() {
               " w-full h-56 lg:h-72 xl:h-72 mt-4 font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-6xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug"
             }
           >
-            Get in touch and let's make something great together. Let's turn
+            Get in touch and lets make something great together. Lets turn
             your idea on an even greater product.
           </div>
           <hr className="border border-pink-500 w-20 my-12" />
