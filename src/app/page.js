@@ -205,21 +205,39 @@ export default function Home() {
                 <TbIcons.TbBrandAbstract />
               </div>
               <div className=" my-6 text-2xl font-semibold">Brand Identity</div>
-              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!</div>
+              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                dicta voluptas perferendis necessitatibus praesentium harum
+                laudantium reiciendis ut animi nihil modi, consequuntur labore
+                quo expedita? Veritatis nobis itaque perferendis voluptate
+                blanditiis dicta vitae ipsam!
+              </div>
             </div>
             <div className="w-full lg:w-1/3 xl:w-1/3 px-4 my-10">
               <div className="h-16 w-16 text-teal-400 text-7xl">
                 <TbIcons.TbBrandAmd />
               </div>
               <div className=" my-6 text-2xl font-semibold">Illustration</div>
-              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!</div>
+              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                dicta voluptas perferendis necessitatibus praesentium harum
+                laudantium reiciendis ut animi nihil modi, consequuntur labore
+                quo expedita? Veritatis nobis itaque perferendis voluptate
+                blanditiis dicta vitae ipsam!
+              </div>
             </div>
             <div className="w-full lg:w-1/3 xl:w-1/3 px-4 my-10">
               <div className="h-16 w-16 text-teal-400 text-7xl">
                 <TbIcons.TbBrandBitbucket />
               </div>
               <div className=" my-6 text-2xl font-semibold">Web Design</div>
-              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!</div>
+              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                dicta voluptas perferendis necessitatibus praesentium harum
+                laudantium reiciendis ut animi nihil modi, consequuntur labore
+                quo expedita? Veritatis nobis itaque perferendis voluptate
+                blanditiis dicta vitae ipsam!
+              </div>
             </div>
           </div>
           <div className="w-full lg:flex xl:flex">
@@ -227,24 +245,88 @@ export default function Home() {
               <div className="h-16 w-16 text-teal-400 text-7xl">
                 <TbIcons.TbBrandCakephp />
               </div>
-              <div className=" my-6 text-2xl font-semibold">Product Strategy</div>
-              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!</div>
+              <div className=" my-6 text-2xl font-semibold">
+                Product Strategy
+              </div>
+              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                dicta voluptas perferendis necessitatibus praesentium harum
+                laudantium reiciendis ut animi nihil modi, consequuntur labore
+                quo expedita? Veritatis nobis itaque perferendis voluptate
+                blanditiis dicta vitae ipsam!
+              </div>
             </div>
             <div className="w-full lg:w-1/3 xl:w-1/3 px-4 my-10">
               <div className="h-16 w-16 text-teal-400 text-7xl">
                 <TbIcons.TbBrandDribbble />
               </div>
               <div className=" my-6 text-2xl font-semibold">UI/UX Design</div>
-              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!</div>
+              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                dicta voluptas perferendis necessitatibus praesentium harum
+                laudantium reiciendis ut animi nihil modi, consequuntur labore
+                quo expedita? Veritatis nobis itaque perferendis voluptate
+                blanditiis dicta vitae ipsam!
+              </div>
             </div>
             <div className="w-full lg:w-1/3 xl:w-1/3 px-4 my-10">
               <div className="h-16 w-16 text-teal-400 text-7xl">
                 <TbIcons.TbBrandFeedly />
               </div>
-              <div className=" my-6 text-2xl font-semibold">Mobile Development</div>
-              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!</div>
+              <div className=" my-6 text-2xl font-semibold">
+                Mobile Development
+              </div>
+              <div className="text-xl lg:text-lg xl:text-lg text-gray-600 dark:text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                dicta voluptas perferendis necessitatibus praesentium harum
+                laudantium reiciendis ut animi nihil modi, consequuntur labore
+                quo expedita? Veritatis nobis itaque perferendis voluptate
+                blanditiis dicta vitae ipsam!
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="w-full">
+        <div className="w-[95%] lg:w-4/5 xl:w-4/5 mx-auto py-32 overflow-x-hidden">
+          <div className="w-full tracking-widest text-pink-500">
+            / FEATURED WORK
+          </div>
+          <div
+            className={
+              merriweather.className +
+              " w-full h-56 lg:h-72 xl:h-72 mt-4 font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-6xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug"
+            }
+          >
+            These are some of our recent design projects and we are so excited
+            to show them to you.
+          </div>
+          <div className="photos w-full h-96"></div>
+          <div className="text-center font-semibold text-4xl my-14">
+            What Clients Are Saying.
+          </div>
+          <div className="w-[200%] h-64 border-t border-red-400 bg-green-900 flex">
+            <div className="w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4"></div>
+          </div>
+          <div className="radiobuttons my-16">buttons</div>
+        </div>
+      </div>
+      <div className="bg-zinc-200 dark:bg-zinc-950 w-full">
+        <div className="w-[95%] lg:w-4/5 xl:w-4/5 mx-auto py-32">
+          <div className="w-full tracking-widest text-pink-500">
+            / CONTACT US
+          </div>
+          <div
+            className={
+              merriweather.className +
+              " w-full h-56 lg:h-72 xl:h-72 mt-4 font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-6xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug"
+            }
+          >
+            Get in touch and let's make something great together. Let's turn
+            your idea on an even greater product.
+          </div>
+          <hr className="border border-pink-500 w-20 my-12" />
+          <div className="text-4xl lg:text-5xl xl:text-6xl font-light tracking-wider">e-cell@ietlucknow.ac.in</div>
         </div>
       </div>
     </>
