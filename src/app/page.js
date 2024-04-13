@@ -11,8 +11,8 @@ const merriweather = Merriweather({
 export default function Home() {
   return (
     <>
-      <div className="h-[100vh] bg-black text-white">
-        <header className="flex justify-between p-12">
+      <div className="h-[100vh] bg-black text-white flex flex-col justify-between" id="top">
+        <header className="flex justify-between p-4 md:p-6 lg:pt-10 xl:pt-10">
           <div>
             <Image
               src="/logo.svg"
@@ -24,72 +24,89 @@ export default function Home() {
             />
           </div>
           <div className="flex items-center gap-5 text-2xl pr-8 hover:cursor-pointer hover:text-gray-300 transition duration-200 scale-75 md:scale-90 lg:scale-100 xl:scale-100">
-            <div className="text-xl font-semibold">MENU</div>
+            <div className="hidden md:block lg:block xl:block text-xl font-semibold">
+              MENU
+            </div>
             <div>
               <FaIcons.FaBars />
             </div>
           </div>
         </header>
         <div className="w-full flex justify-between">
-          <div className="w-full lg:w-3/5 xl:w-3/5 bg-green-500">
+          <div className="w-full lg:w-4/5 xl:w-4/5">
             <div
               className={
-                merriweather.className + " w-full text-5xl font-bold bg-red-400"
+                merriweather.className +
+                " w-full pl-10 md:pl-28 lg:pl-36 xl:pl-52 "
               }
             >
-              <div className={merriweather.className}>Hello folks, we are</div>
-              <div>E-CELL IET Lucknow</div>
-            </div>
-            <div className="flex">
-              <hr className="w-16" />
-              <div className="">
-                We create stunning digital experiences that will help your
-                business stand out.
+              <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
+                <div className="my-2 md:my-4 lg:my-4 xl:my-4">
+                  Hello folks, we are
+                </div>
+                <div className="my-2 md:my-4 lg:my-4 xl:my-4 gradient">
+                  E-CELL IET Lucknow
+                </div>
+              </div>
+              <div className="lg:flex xl:flex justify-center w-3/4 my-2">
+                <hr className="w-20 my-8 lg:my-6 xl:my-6 border border-pink-500" />
+                <div className="lg:pl-4 xl:pl-4 text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-medium">
+                  We create stunning digital experiences that will help your
+                  business stand out.
+                </div>
               </div>
             </div>
           </div>
-          <div className="hidden lg:block xl:block bg-orange-400 w-2/5">
-            <ul className="">
-              <li>
-                <a className="" href="#">
-                  About<span>who we are</span>
-                </a>
-              </li>
-              <li>
-                <a className="" href="#">
-                  Services<span>what we do</span>
-                </a>
-              </li>
-              <li>
-                <a className="" href="#">
-                  Contact<span>get in touch</span>
-                </a>
-              </li>
-            </ul>
+          <div className="hidden lg:block xl:block w-1/5">
+            <div className="w-full h-full flex flex-col justify-center items-end gap-6">
+
+              <a href="#whoWeAre" className="bg-pink-900/[.2] h-20 w-4/5 hover:w-5/6 transition ease-in delay-300 cursor-pointer pl-8 rounded-l-xl pt-2">
+                <li className="list-disc text-pink-400">
+                  <span className="text-white text-2xl">About</span>
+                </li>
+                <div className="text-lg">who we are</div>
+              </a>
+
+              <a href="#whatWeDo" className="bg-pink-900/[.2] h-20 w-4/5 hover:w-5/6 transition ease-in delay-300 cursor-pointer pl-8 rounded-l-xl pt-2">
+                <li className="list-disc text-pink-400">
+                  <span className="text-white text-2xl">Services</span>
+                </li>
+                <div className="text-lg">what we do</div>
+              </a>
+
+              <a href="#Blog" className="bg-pink-900/[.2] h-20 w-4/5 hover:w-5/6 transition ease-in delay-300 cursor-pointer pl-8 rounded-l-xl pt-2">
+                <li className="list-disc text-pink-400">
+                  <span className="text-white text-2xl">Contact</span>
+                </li>
+                <div className="text-lg">get in touch</div>
+              </a>
+            </div>
           </div>
         </div>
-        <div className="flex">
-          <div className="w-full bg-gray-400 flex justify-between">
-            <ul className="flex ">
-              <li>Follow Us</li>
-              <hr className="w-6" />
-              <li>facebook</li>
-              <li>Twitter</li>
-              <li>LinkedIn</li>
-            </ul>
-            <div className="flex">
+        {/* <div className="flex"> */}
+          <div className="w-full flex justify-between px-16 mb-3">
+            <div className="flex h-full gap-3 text-">
+              <div>Follow Us</div>
+              <hr className="w-12 border border-pink-400 mt-3" />
+              <a href="" className="hover:cursor-pointer"><div>Facebook</div></a>
+              <a href="" className="hover:cursor-pointer"><div>Twitter</div></a>
+              <a href="" className="hover:cursor-pointer"><div>LinkedIn</div></a>
+            </div>
+            <div className="flex items-center h-12 gap-3">
               <div>SCROLL DOWN</div>
-              <div className="w-14 h-14 bg-white rounded-full text-black text-center">
-                &#8595;
+              <a href="#whoWeAre">
+              <div className="ml-5 w-10 aspect-square lg:w-12 xl:12 rounded-full bg-zinc-900 hover:bg-zinc-600 hover:text-black transition ease-in delay-75 flex justify-center items-center text-xl">
+                <FaIcons.FaArrowDownLong />
               </div>
+            </a>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
-      <hr />
+      <hr  id="whoWeAre"/>
       <div className="w-full">
         <div className="w-[95%] lg:w-4/5 xl:w-4/5 mx-auto my-32">
-          <div className="w-full tracking-widest text-pink-500">
+          <div className="w-full tracking-widest text-pink-500 text-lg">
             / WHO WE ARE
           </div>
           <div
@@ -176,9 +193,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-zinc-200 dark:bg-zinc-950 w-full">
+      <div className="bg-zinc-200 dark:bg-zinc-950 w-full" id="whatWeDo">
         <div className="w-[95%] lg:w-4/5 xl:w-4/5 mx-auto py-32">
-          <div className="w-full tracking-widest text-pink-500">
+          <div className="w-full tracking-widest text-pink-500 text-lg">
             / WHAT WE DO
           </div>
           <div
@@ -287,9 +304,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full" id="Blog">
         <div className="w-[95%] lg:w-4/5 xl:w-4/5 mx-auto py-32 overflow-x-hidden">
-          <div className="w-full tracking-widest text-pink-500">
+          <div className="w-full tracking-widest text-pink-500 text-lg">
             / FEATURED WORK
           </div>
           <div
@@ -312,21 +329,57 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-zinc-200 dark:bg-zinc-950 w-full">
-        <div className="w-[95%] lg:w-4/5 xl:w-4/5 mx-auto py-32">
-          <div className="w-full tracking-widest text-pink-500">
+        <div className="w-[95%] lg:w-4/5 xl:w-4/5 mx-auto py-24">
+          <div className="w-full tracking-widest text-pink-500 text-lg">
             / CONTACT US
           </div>
           <div
             className={
               merriweather.className +
-              " w-full h-56 lg:h-72 xl:h-72 mt-4 font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-6xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug"
+              " w-full h-60 lg:h-72 xl:h-72 mt-4 font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-6xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug"
             }
           >
-            Get in touch and lets make something great together. Lets turn
-            your idea on an even greater product.
+            Get in touch and lets make something great together. Lets turn your
+            idea on an even greater product.
           </div>
-          <hr className="border border-pink-500 w-20 my-12" />
-          <div className="text-4xl lg:text-5xl xl:text-6xl font-light tracking-wider">e-cell@ietlucknow.ac.in</div>
+          <hr className="border border-pink-500 w-20 my-16" />
+          <div className="text-4xl lg:text-5xl xl:text-6xl font-light tracking-wider">
+            e-cell@ietlucknow.ac.in
+          </div>
+          <div className="lg:flex xl:flex w-[80%] my-20 gap-8">
+            <div className="w-full lg:w-1/2 xl:w-1/2">
+              <div className="w-full tracking-widest text-pink-500 text-lg">
+                / WHERE TO FIND US
+              </div>
+              <div className="text-2xl lg:text-3xl xl:text-3xl md:leading-snug lg:leading-snug xl:leading-snug my-6 text-zinc-700">
+                1600 Amphitheatre Parkway Mountain View, CA 94043 US
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2 xl:w-1/2 h-12">
+              <div className="w-full tracking-widest text-pink-500 text-lg">
+                / FOLLOW US
+              </div>
+              <div className="flex gap-5 my-6">
+                <TbIcons.TbBrandFeedly className="text-zinc-400 dark:text-zinc-700 text-5xl" />
+                <TbIcons.TbBrandFeedly className="text-zinc-400 dark:text-zinc-700 text-5xl" />
+                <TbIcons.TbBrandFeedly className="text-zinc-400 dark:text-zinc-700 text-5xl" />
+                <TbIcons.TbBrandFeedly className="text-zinc-400 dark:text-zinc-700 text-5xl" />
+              </div>
+            </div>
+          </div>
+          <div className="text-zinc-700 absolute -right-24 lg:-right-20 xl:-right-16 -rotate-90 tracking-widest flex items-center gap-4">
+            <a href="#top">
+              <div className="ml-5 w-12 aspect-square lg:w-16 xl:16 rounded-full bg-black hover:bg-zinc-700 hover:text-black transition ease-in delay-75 flex justify-center items-center text-xl">
+                <FaIcons.FaArrowRightLong />
+              </div>
+            </a>
+            <hr className="w-28 border border-zinc-700" />
+            <div className="text-xs">BACK ON TOP </div>
+          </div>
+          <div className="text-zinc-400 dark:text-zinc-700 pt-16 w-[80%]">
+            Copyright ©2024 All rights reserved | This website is made with{" "}
+            <span className="text-xl">&#9829;</span> by Varun Gupta
+          </div>
         </div>
       </div>
     </>
