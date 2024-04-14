@@ -84,16 +84,16 @@ export default function Home() {
           </div>
         </div>
         {/* <div className="flex"> */}
-          <div className="w-full flex justify-between px-16 mb-3">
+          <div className="w-full flex justify-between px-6 md:px-12 lg:px-16 xl:px-16 mb-3">
             <div className="flex h-full gap-3 text-">
               <div>Follow Us</div>
-              <hr className="w-12 border border-pink-400 mt-3" />
-              <a href="" className="hover:cursor-pointer"><div>Facebook</div></a>
-              <a href="" className="hover:cursor-pointer"><div>Twitter</div></a>
-              <a href="" className="hover:cursor-pointer"><div>LinkedIn</div></a>
+              <hr className="w-6 md:w-10 lg:w-12 xl:w-12 border border-pink-400 mt-3" />
+              <a href="" className="hover:cursor-pointer"><div className="flex items-center gap-2"><TbIcons.TbBrandCakephp/> <div className="hidden md:block lg:block xl:block">Facebook</div> </div></a>
+              <a href="" className="hover:cursor-pointer"><div className="flex items-center gap-2"><TbIcons.TbBrandCakephp/> <div className="hidden md:block lg:block xl:block">Twitter</div> </div></a>
+              <a href="" className="hover:cursor-pointer"><div className="flex items-center gap-2"><TbIcons.TbBrandCakephp/> <div className="hidden md:block lg:block xl:block">LinkedIn</div> </div></a>
             </div>
             <div className="flex items-center h-12 gap-3">
-              <div>SCROLL DOWN</div>
+              <div className="hidden md:block lg:block xl:block">SCROLL DOWN</div>
               <a href="#whoWeAre">
               <div className="ml-5 w-10 aspect-square lg:w-12 xl:12 rounded-full bg-zinc-900 hover:bg-zinc-600 hover:text-black transition ease-in delay-75 flex justify-center items-center text-xl">
                 <FaIcons.FaArrowDownLong />
@@ -336,14 +336,14 @@ export default function Home() {
           <div
             className={
               merriweather.className +
-              " w-full h-60 lg:h-72 xl:h-72 mt-4 font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-6xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug"
+              " w-full h-64 lg:h-72 xl:h-72 mt-4 font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-6xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug"
             }
           >
             Get in touch and lets make something great together. Lets turn your
             idea on an even greater product.
           </div>
           <hr className="border border-pink-500 w-20 my-16" />
-          <div className="text-4xl lg:text-5xl xl:text-6xl font-light tracking-wider">
+          <div className="text-3xl lg:text-5xl xl:text-6xl font-light tracking-wider">
             e-cell@ietlucknow.ac.in
           </div>
           <div className="lg:flex xl:flex w-[80%] my-20 gap-8">
@@ -378,7 +378,7 @@ export default function Home() {
           </div>
           <div className="text-zinc-400 dark:text-zinc-700 pt-16 w-[80%]">
             Copyright ©2024 All rights reserved | This website is made with{" "}
-            <span className="text-xl">&#9829;</span> by Varun Gupta
+            <span className="text-xl text-zinc-400 dark:text-zinc-700">&#9829;</span> by Varun Gupta
           </div>
         </div>
       </div>
