@@ -1,16 +1,14 @@
 "use client";
 import { useEffect, useState } from "react";
 import * as FaIcons from "react-icons/fa6";
-export default function menu() {
+export default function Menu() {
   const [show, setShow] = useState(true);
   useEffect(() => {
     function handleScroll() {
       if (window.scrollY > 150) {
         setShow(false);
-        console.log(1);
       } else {
         setShow(true);
-        console.log(0);
       }
     }
 
