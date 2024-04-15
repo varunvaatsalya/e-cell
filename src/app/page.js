@@ -1,7 +1,7 @@
 import { Merriweather } from "next/font/google";
 import Image from "next/image";
 import Data from "./data.json";
-import Menu from "./Menu";
+import Navbar from "./Navbar";
 import * as FaIcons from "react-icons/fa6";
 import * as TbIcons from "react-icons/tb";
 
@@ -31,7 +31,7 @@ export default function Home() {
             />
           </div>
           {/* <div className=" fixed right-4 md:right-6 lg:right-8 xl:right-8 h-16 flex items-center text-2xl px-6 hover:cursor-pointer hover:text-gray-300 transition duration-200 scale-75 md:scale-90 lg:scale-100 xl:scale-100" onClick={toggleSlide}> */}
-            <Menu/>
+            <Navbar/>
             
           {/* </div> */}
         </header>
