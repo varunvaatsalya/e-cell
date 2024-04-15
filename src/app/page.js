@@ -1,7 +1,7 @@
 import { Merriweather } from "next/font/google";
 import Image from "next/image";
 import Data from "./data.json";
-import Menu from "./menu";
+import Menu from "./Menu";
 import * as FaIcons from "react-icons/fa6";
 import * as TbIcons from "react-icons/tb";
 
@@ -18,6 +18,7 @@ export default function Home() {
         className="h-[100vh] bg-black text-white flex flex-col justify-between"
         id="top"
       >
+        {/* <div className="h-screen w-96 fixed bg-red-400 left-full transition-transform duration-500 transform translate-x-full"></div> */}
         <header className="flex justify-between p-4 md:p-6 lg:pt-10 xl:pt-10">
           <div>
             <Image
@@ -29,10 +30,10 @@ export default function Home() {
               priority
             />
           </div>
-          <div className=" fixed right-8 h-16 flex items-center text-2xl px-6 hover:cursor-pointer hover:text-gray-300 transition duration-200 scale-75 md:scale-90 lg:scale-100 xl:scale-100">
+          {/* <div className=" fixed right-4 md:right-6 lg:right-8 xl:right-8 h-16 flex items-center text-2xl px-6 hover:cursor-pointer hover:text-gray-300 transition duration-200 scale-75 md:scale-90 lg:scale-100 xl:scale-100" onClick={toggleSlide}> */}
             <Menu/>
             
-          </div>
+          {/* </div> */}
         </header>
         <div className="w-full flex justify-between">
           <div className="w-full lg:w-4/5 xl:w-4/5">
@@ -129,7 +130,7 @@ export default function Home() {
           <div className="flex items-center h-12 gap-3">
             <div className="hidden md:block lg:block xl:block">SCROLL DOWN</div>
             <a href="#whoWeAre">
-              <div className="ml-5 w-10 aspect-square lg:w-12 xl:12 rounded-full bg-zinc-900 hover:bg-zinc-600 hover:text-black transition ease-in delay-75 flex justify-center items-center text-xl">
+              <div className="animate-bounce ml-5 w-10 aspect-square lg:w-12 xl:12 rounded-full bg-zinc-900 hover:bg-zinc-600 hover:text-black transition ease-in delay-75 flex justify-center items-center text-xl">
                 <FaIcons.FaArrowDownLong />
               </div>
             </a>
@@ -313,7 +314,14 @@ export default function Home() {
           >
             {Data.works.title}
           </div>
-          <div className="photos w-full h-96"></div>
+
+          <div className="photos w-full h-96 bg-red-400">
+
+          </div>
+
+
+
+
           <div className="text-center font-semibold text-4xl my-14">
             What Clients Are Saying.
           </div>
