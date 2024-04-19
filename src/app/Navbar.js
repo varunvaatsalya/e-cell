@@ -32,41 +32,41 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`h-screen w-96 fixed z-10 bg-gray-950/[.99] top-0 right-0 transition-transform duration-500 ${
+        className={`h-screen w-screen md:w-96 lg:w-96 xl:w-96 fixed z-10 bg-gray-950/[.99] top-0 right-0 transition-transform duration-500 ${
           isVisible ? "transform translate-x-0" : "transform translate-x-full"
         }`}
       >
         <div className="mt-16 mb-10 w-4/5 mx-auto text-xl text-pink-400">lorem ipsum</div>
         <hr className="w-4/5 mx-auto border-gray-900" />
-        <a href="#top" className="w-full h-full text-gray-700 hover:text-pink-400">
+        <a href="#top" className="w-full h-full text-gray-700 hover:text-pink-400" onClick={toggleSlide}>
           <div className="h-12 w-4/5 mx-auto flex items-center gap-4">
             <div className="text-sm">.01</div>
             <div className="text-md text-white">Home</div>
           </div>
         </a>
         <hr className="w-4/5 mx-auto border-gray-900" />
-        <a href="#top" className="w-full h-full text-gray-700 hover:text-pink-400">
+        <a href="#top" className="w-full h-full text-gray-700 hover:text-pink-400" onClick={toggleSlide}>
           <div className="h-12 w-4/5 mx-auto flex items-center gap-4">
             <div className="text-sm">.02</div>
             <div className="text-md text-white">About</div>
           </div>
         </a>
         <hr className="w-4/5 mx-auto border-gray-900" />
-        <a href="#top" className="w-full h-full text-gray-700 hover:text-pink-400">
+        <a href="#top" className="w-full h-full text-gray-700 hover:text-pink-400" onClick={toggleSlide}>
           <div className="h-12 w-4/5 mx-auto flex items-center gap-4">
             <div className="text-sm">.03</div>
             <div className="text-md text-white">Services</div>
           </div>
         </a>
         <hr className="w-4/5 mx-auto border-gray-900" />
-        <a href="#top" className="w-full h-full text-gray-700 hover:text-pink-400">
+        <a href="#top" className="w-full h-full text-gray-700 hover:text-pink-400" onClick={toggleSlide}>
           <div className="h-12 w-4/5 mx-auto flex items-center gap-4">
             <div className="text-sm">.04</div>
             <div className="text-md text-white">Blogs</div>
           </div>
         </a>
         <hr className="w-4/5 mx-auto border-gray-900" />
-        <a href="#top" className="w-full h-full text-gray-700 hover:text-pink-400">
+        <a href="#top" className="w-full h-full text-gray-700 hover:text-pink-400" onClick={toggleSlide}>
           <div className="h-12 w-4/5 mx-auto flex items-center gap-4">
             <div className="text-sm">.05</div>
             <div className="text-md text-white">Contact</div>
