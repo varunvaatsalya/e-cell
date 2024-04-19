@@ -86,7 +86,7 @@ export default function Home() {
               </a>
 
               <a
-                href="#Blog"
+                href="#contact"
                 className="bg-pink-900/[.2] h-20 w-4/5 hover:w-5/6 transition ease-in delay-300 cursor-pointer pl-8 rounded-l-xl pt-2"
               >
                 <li className="list-disc text-pink-400">
@@ -331,7 +331,7 @@ export default function Home() {
           <div className="radiobuttons my-16">buttons</div>
         </div>
       </div>
-      <div className="bg-zinc-200 dark:bg-zinc-950 w-full">
+      <div className="bg-zinc-200 dark:bg-zinc-950 w-full"  id="contact">
         <div className="w-[95%] lg:w-4/5 xl:w-4/5 mx-auto py-24">
           <div className="w-full tracking-widest text-pink-500 text-lg">
             {"/ " + Data.contact.indicate.toUpperCase()}
