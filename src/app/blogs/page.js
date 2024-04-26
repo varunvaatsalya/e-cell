@@ -83,9 +83,9 @@ function page() {
           </div>
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-6 lg:space-y-0">
-              {callouts.map((callout) => (
+              {callouts.map((callout, index) => (
                 <div
-                  key={callout.name}
+                  key={index+1}
                   className="group relative hover:cursor-pointer"
                 >
                   <a href="#">
