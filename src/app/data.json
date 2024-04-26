@@ -4,24 +4,26 @@
     "main": "E-CELL IET Lucknow",
     "description": "We create stunning digital experiences that will help your business stand out."
   },
-  "homeLinks":{
-    "first":{
-        "title":"About",
-        "tag":"who we are"
+  "homeLinks": {
+    "first": {
+      "title": "About",
+      "tag": "who we are"
     },
-    "second":{
-        "title":"services",
-        "tag":"what we do"
+    "second": {
+      "title": "services",
+      "tag": "what we do"
     },
-    "third":{
-        "title":"Contact",
-        "tag":"get in touch"
+    "third": {
+      "title": "Contact",
+      "tag": "get in touch"
     }
   },
   "about": {
     "indicate": "who we are",
     "title": "We are a group of design driven individuals passionate about creating beautiful UI designs.",
-    "description": "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "description": "Varun arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse."
+  },
+  "about_section": {
     "section1": {
       "title": "Define",
       "description": "Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab."
@@ -42,7 +44,9 @@
   "services": {
     "indicate": "WHAT WE DO",
     "title": "We have everything you need to launch and grow a successful digital business.",
-    "description": "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "description": "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse."
+  },
+  "services_section": {
     "section1": {
       "title": "Brand Identity",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta voluptas perferendis necessitatibus praesentium harum laudantium reiciendis ut animi nihil modi, consequuntur labore quo expedita? Veritatis nobis itaque perferendis voluptate blanditiis dicta vitae ipsam!"
@@ -75,10 +79,10 @@
   "contact": {
     "indicate": "contact us",
     "title": "Get in touch and lets make something great together. Lets turn your idea on an even greater product.",
-    "email": "e-cell@ietlucknow.ac.in",
-    "address": {
-      "indicate": "WHERE TO FIND US",
-      "description": "1600 Amphitheatre Parkway Mountain View, CA 94043 US"
-    }
+    "email": "e-cell@ietlucknow.ac.in"
+  },
+  "address": {
+    "indicate": "WHERE TO FIND US",
+    "description": "1600 Amphitheatre Parkway Mountain View, CA 94043 US"
   }
 }
