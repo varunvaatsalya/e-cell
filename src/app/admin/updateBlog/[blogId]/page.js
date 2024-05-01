@@ -23,16 +23,14 @@ function formatDate(input) {
 
 export default function Example({ params }) {
   const router = useRouter();
-  let blogId = params.blogId;
-  let blogData = ImageData[blogId];
-  let dateFormat = formatDate(blogData.date);
-  const [inputs, setInputs] = useState(blogData.valuesArray);
-  const [images, setImages] = useState(blogData.images);
-  const [title, setTitle] = useState(blogData.title);
-  const [date, setDate] = useState(dateFormat);
-  const [description, setDescription] = useState(blogData.description);
-  const [category, setCategory] = useState(blogData.category);
-  const [aims, setAims] = useState(blogData.aims);
+
+  const [inputs, setInputs] = useState();
+  const [images, setImages] = useState();
+  const [title, setTitle] = useState();
+  const [date, setDate] = useState();
+  const [description, setDescription] = useState();
+  const [category, setCategory] = useState();
+  const [aims, setAims] = useState();
   const [confirmSection, setConfirmSection] = useState(false);
   const [messageSection, setMessageSection] = useState(false);
   const [showConfirmDeleteSection, setShowConfirmDeleteSection] =
@@ -40,7 +38,19 @@ export default function Example({ params }) {
   const [blankFieldAlert, setBlankFieldAlert] = useState(false);
   useEffect(() => {}, [blankFieldAlert, inputs]);
 
+  let blogId = params.blogId;
+  let blogData = ImageData[blogId];
   if (!blogData) return notfound();
+  else {
+    let dateFormat = formatDate(blogData.date);
+    setInputs(blogData.valuesArray);
+    setImages(blogData.images);
+    setTitle(blogData.title);
+    setDate(dateFormat);
+    setDescription(blogData.description);
+    setCategory(blogData.category);
+    setAims(blogData.aims);
+  }
 
   function refreshPage() {
     router.push("/admin/updateBlog");
@@ -70,7 +80,7 @@ export default function Example({ params }) {
     });
     Data.append("data", JSON.stringify(data));
     Data.append("blogId", blogId);
-    let result = await fetch("http://localhost:3000/api/updateBlog", {
+    let result = await fetch("/api/updateBlog", {
       method: "POST",
       body: Data,
     });
@@ -141,9 +151,7 @@ export default function Example({ params }) {
   };
 
   async function toggleDeleteBtn() {
-    let result = await fetch(
-      `http://localhost:3000/api/deleteBlog?blogId=${blogId}`
-    );
+    let result = await fetch(`/api/deleteBlog?blogId=${blogId}`);
     if (result) result = await result.json();
     if (result.success) {
       setShowConfirmDeleteSection(!showConfirmDeleteSection);
@@ -375,7 +383,7 @@ export default function Example({ params }) {
                   {typeof image == "string" ? (
                     <img
                       // src={image ? URL.createObjectURL(image) : ""}
-                      src={`http://localhost:3000/images/${image}`}
+                      src={`${window.location.origin}/images/${image}`}
                       alt={`Image ${index + 1}`}
                       className="w-full h-full object-cover object-center rounded-lg"
                     />

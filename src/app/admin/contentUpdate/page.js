@@ -74,7 +74,7 @@ export default function Section() {
   }
 
   async function finishUpdate() {
-    let res = await fetch("http://localhost:3000/api/getUpdateData", {
+    let res = await fetch("/api/getUpdateData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

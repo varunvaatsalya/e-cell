@@ -47,7 +47,7 @@ export default function Example() {
       Data.append(`image${index + 1}`, image);
     });
     Data.append("data", JSON.stringify(data));
-    let result = await fetch("http://localhost:3000/api/uploads", {
+    let result = await fetch("/api/uploads", {
       method: "POST",
       body: Data,
     });
