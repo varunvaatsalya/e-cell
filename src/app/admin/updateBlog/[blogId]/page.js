@@ -25,7 +25,6 @@ export default function Example({ params }) {
   const router = useRouter();
   let blogId = params.blogId;
   let blogData = ImageData[blogId];
-  if (!blogData) return notfound();
   let dateFormat = formatDate(blogData.date);
   const [inputs, setInputs] = useState(blogData.valuesArray);
   const [images, setImages] = useState(blogData.images);
@@ -38,8 +37,9 @@ export default function Example({ params }) {
   const [messageSection, setMessageSection] = useState(false);
   const [showConfirmDeleteSection, setShowConfirmDeleteSection] =
     useState(false);
-
   const [blankFieldAlert, setBlankFieldAlert] = useState(false);
+
+  if (!blogData) return notfound();
 
   function refreshPage() {
     router.push("/admin/updateBlog");
@@ -56,7 +56,7 @@ export default function Example({ params }) {
       category,
       valuesArray,
       aims,
-      images
+      images,
     };
     const Data = new FormData();
     images.forEach((image, index) => {
