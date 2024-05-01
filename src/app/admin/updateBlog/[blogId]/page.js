@@ -38,6 +38,7 @@ export default function Example({ params }) {
   const [showConfirmDeleteSection, setShowConfirmDeleteSection] =
     useState(false);
   const [blankFieldAlert, setBlankFieldAlert] = useState(false);
+  useEffect(() => {}, [blankFieldAlert, inputs]);
 
   if (!blogData) return notfound();
 
@@ -130,8 +131,6 @@ export default function Example({ params }) {
     newInputs = inputs.filter((_, i) => i !== index);
     setInputs(newInputs);
   };
-  ``;
-  useEffect(() => {}, [blankFieldAlert, inputs]);
 
   const toggleConfirmSection = () => {
     if (!images || !title || !date || !description || !category) {
