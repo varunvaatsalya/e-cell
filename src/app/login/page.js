@@ -1,30 +1,8 @@
 import Image from "next/image";
 
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 export default function Example() {
   return (
     <>
-      {/*
-          This example requires updating your template:
-  
-          ```
-          <html class="h-full bg-white">
-          <body class="h-full">
-          ```
-        */}
       <div className="flex min-h-screen flex-1 flex-col justify-center px-6 py-4 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <Image
@@ -58,6 +36,7 @@ export default function Example() {
                   type="email"
                   autoComplete="email"
                   placeholder="email"
+                  title="Enter "
                   required
                   className="p-2 w-full rounded-md bg-zinc-100 dark:bg-zinc-700 shadow-inner shadow-zinc-500 dark:shadow-zinc-900 placeholder:text-zinc-400"
                 />

@@ -1,7 +1,11 @@
 import Image from "next/image";
 import * as FaIcons from "react-icons/fa6";
+import ImageData from "../../imageData.json";
+import notfound from "../../not-found"
 
 function page({ params }) {
+  let blogData = ImageData[params.blog];
+  if(!blogData) return notfound();
   return (
     <>
       <div className="pt-6">
@@ -31,63 +35,33 @@ function page({ params }) {
                 </svg>
               </div>
             </li>
-            <li className="text-sm font-medium text-gray-500">
-              Lorem, ipsum dolor
-            </li>
+            <li className="text-sm font-medium text-gray-500">{params.blog}</li>
           </ol>
         </nav>
 
         {/* Image gallery */}
         <div className="mx-auto mt-6 max-w-2xl lg:max-w-full lg:px-8">
           <div className="w-full flex flex-wrap justify-center md:gap-2 line-clamp-2">
-            <Image
-              height={1000}
-              width={1000}
-              src="/images/nidhi1.png"
-              alt="image"
-              className="max-h-96 w-auto md:rounded-lg"
-            />
-            <Image
-              height={1000}
-              width={1000}
-              src="/images/sparsh.png"
-              alt="image"
-              className="max-h-96 w-auto md:rounded-lg"
-            />
-            <Image
-              height={1000}
-              width={1000}
-              src="/images/nidhi1.png"
-              alt="image"
-              className="max-h-96 w-auto"
-            />
-            <Image
-              height={1000}
-              width={1000}
-              src="/images/nidhi4.png"
-              alt="image"
-              className="max-h-96 w-auto"
-            />
-            <Image
-              height={1000}
-              width={1000}
-              src="/images/nidhi1.png"
-              alt="image"
-              className="max-h-96 w-auto"
-            />
+            {blogData.images.map((image, key) => (<Image
+                key={key}
+                height={1000}
+                width={1000}
+                src={`/images/${image}`}
+                alt="image"
+                className="object-contain min-h-96 w-auto md:rounded-xl"
+              />)
+            )}
           </div>
         </div>
 
         {/* Product info */}
         <div className="mx-auto max-w-2xl px-4 pb-16 pt-5 sm:px-6 lg:max-w-7xl lg:px-8 lg:pb-24 lg:pt-8">
           <div className="text-pink-400 dark:text-pink-700 font-semibold text-sm pb-5">
-            Posted On : 23/11/2004
+            Posted On : {blogData.date}
           </div>
 
           <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-3xl lg:text-4xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            tenetur, ad autem, est velit aperiam eligendi ut labore accusantium
-            maiores quidem placeat illo animi modi?
+            {blogData.title}
           </h1>
 
           <div className="py-10 lg:pb-16 lg:pr-8 lg:pt-6">
@@ -97,24 +71,7 @@ function page({ params }) {
 
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 dark:text-gray-400">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolores ipsam veritatis mollitia perferendis omnis, dolorem ea
-                  reiciendis soluta? Esse, veniam animi alias molestias delectus
-                  quae, dicta eos vel quibusdam fugit minima id voluptas natus
-                  corrupti quia necessitatibus tenetur cumque ipsam, harum
-                  architecto ex expedita vitae sit? Reiciendis quo numquam ab,
-                  veritatis possimus dignissimos eligendi, expedita sit eum
-                  sapiente neque iure dicta libero esse itaque saepe autem
-                  suscipit architecto modi tempora voluptates veniam corrupti?
-                  Cumque ducimus doloribus numquam, distinctio assumenda beatae.
-                  Nesciunt itaque eligendi minima necessitatibus vero cumque at
-                  harum, nam, aperiam totam quod in reiciendis. Illum aspernatur
-                  qui voluptatibus voluptates rerum odit impedit ipsa voluptate
-                  amet. Libero et officiis non a quod animi veniam iusto
-                  doloribus, odio ipsa? Nulla repellendus quam vero, adipisci
-                  quod error quo alias. Maiores nihil ipsam vero deserunt eius,
-                  sint temporibus, aperiam laudantium, ad quam optio quod
-                  eligendi non cumque eaque iusto iure reiciendis alias dolorum.
+                  {blogData.description}
                 </p>
               </div>
             </div>
@@ -126,13 +83,13 @@ function page({ params }) {
 
               <div className="mt-4">
                 <ul role="list" className="list-disc space-y-2 pl-4 text-base">
-                  {/* {product.highlights.map((highlight) => ( */}
-                  <li key="1" className="text-gray-400">
-                    <span className="text-gray-600 dark:text-gray-400">
-                      economics
-                    </span>
-                  </li>
-                  {/* ))} */}
+                  {blogData.valuesArray.map((highlight) => (
+                    <li key="1" className="text-gray-400">
+                      <span className="text-gray-600 dark:text-gray-400">
+                        {highlight}
+                      </span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -144,9 +101,7 @@ function page({ params }) {
 
               <div className="mt-4 space-y-6">
                 <p className="text-base text-gray-600 dark:text-gray-400">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nostrum libero esse iusto eveniet labore tenetur? Veritatis
-                  dicta labore voluptatem iure.
+                  {blogData.aims}
                 </p>
               </div>
             </div>

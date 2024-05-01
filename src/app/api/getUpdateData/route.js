@@ -1,11 +1,11 @@
 const fs = require("fs");
 import { NextResponse } from "next/server";
 
-export function GET(Request) {
-  let Data = fs.readFileSync("src/app/data2.json");
-  Data = JSON.parse(Data);
-  return NextResponse.json(Data, { status: 200 });
-}
+// export function GET(Request) {
+//   let Data = fs.readFileSync("src/app/data2.json");
+//   Data = JSON.parse(Data);
+//   return NextResponse.json(Data, { status: 200 });
+// }
 
 export async function POST(Request) {
   let payload = await Request.json();
@@ -14,5 +14,5 @@ export async function POST(Request) {
     if (err) console.log(err);
   });
 
-  return NextResponse.json({ message: "success" }, { status: 200 });
+  return NextResponse.json({ success: true }, { status: 200 });
 }

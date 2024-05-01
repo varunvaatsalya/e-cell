@@ -1,7 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import * as FaIcons from "react-icons/fa6";
-import * as faIcons from "react-icons/fa";
 import * as ImIcons from "react-icons/im";
 import { RiAdminFill } from "react-icons/ri";
 export default function Navbar() {

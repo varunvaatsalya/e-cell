@@ -4,8 +4,13 @@ import { useEffect, useState } from "react";
 import { CgDanger } from "react-icons/cg";
 import Navbar from "../../Navbar";
 import data from "../../../app/data2.json";
+import { useRouter } from "next/navigation";
+import Confirm from "@/app/Confirm";
+import Message from "@/app/Message";
+
 
 export default function Section() {
+  const router = useRouter()
   const [Data, setData] = useState(data);
   const [content, setContent] = useState("");
   const [value, setvalue] = useState("title");
@@ -15,21 +20,14 @@ export default function Section() {
   const [thirdValue, setThirdValue] = useState("title");
   const [thirdNameArray, setThirdNameArray] = useState(["select the option"]);
   const [showFinishbtn, setShowFinishbtn] = useState(false);
+  const [showConfirmSection, setShowConfirmSection] = useState(false);
+  const [messageSection, setMessageSection] = useState(false);
 
-  // let DataClone = await getData();
-  // setData(DataClone);
-
-  // useEffect(() => {
-  //   async function getdata() {
-  //     let res = await fetch("http://localhost:3000/api/getUpdateData");
-  //     res = await res.json();
-  //     console.log(res);
-  //     setData(res);
-  //   }
-  //   getdata();
-  // }, []);
-  // if(Data){
-  // const Data = await getData();
+  function refreshPage(){
+    
+    router.push("/admin")
+  }
+  
 
   let mainNameArray = Object.keys(Data);
   let secondNameArray = Object.keys(Data[value]);
@@ -85,7 +83,10 @@ export default function Section() {
     });
 
     res = await res.json();
-    console.log(res);
+    if(res.success){
+      setShowConfirmSection(!showConfirmSection)
+      setMessageSection(!messageSection)
+    }
   }
 
   useEffect(() => {}, [
@@ -100,6 +101,12 @@ export default function Section() {
   // }
   return (
     <>
+    {showConfirmSection ? (
+        <Confirm cancel={()=>{setShowConfirmSection(!showConfirmSection)}} confirm={finishUpdate} />
+      ) : (
+        <></>
+      )}
+      {messageSection ? <Message Status={true} refreshPage={refreshPage} /> : <></>}
       <div className="w-full ">
         <div className="w-[95%] md:w-4/5 lg:w-3/5 py-8 mx-auto ">
           <Navbar />
@@ -228,7 +235,7 @@ export default function Section() {
                 <hr className="border border-gray-400 dark:border-gray-700 my-4 " />
                 <button
                   className="bg-red-600 hover:bg-red-700 text-white font-semibold text-lg w-full rounded-xl h-12"
-                  onClick={finishUpdate}
+                  onClick={()=>{setShowConfirmSection(!showConfirmSection)}}
                 >
                   Push the updates to WebSite !
                 </button>
