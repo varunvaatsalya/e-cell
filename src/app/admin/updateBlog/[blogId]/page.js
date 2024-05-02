@@ -24,32 +24,32 @@ function formatDate(input) {
 export default function Example({ params }) {
   const router = useRouter();
 
-  let blogId = params.blogId;
-  let blogData = ImageData[blogId];
-  if (!blogData) return notfound();
-  // else {
-  let dateFormat = formatDate(blogData.date);
-  // setInputs(blogData.valuesArray);
-  // setImages(blogData.images);
-  // setTitle(blogData.title);
-  // setDate(dateFormat);
-  // setDescription(blogData.description);
-  // setCategory(blogData.category);
-  // setAims(blogData.aims);
-  // }
-  const [inputs, setInputs] = useState(blogData.valuesArray);
-  const [images, setImages] = useState(blogData.images);
-  const [title, setTitle] = useState(blogData.title);
-  const [date, setDate] = useState(dateFormat);
-  const [description, setDescription] = useState(blogData.description);
-  const [category, setCategory] = useState(blogData.category);
-  const [aims, setAims] = useState(blogData.aims);
+  const [inputs, setInputs] = useState();
+  const [images, setImages] = useState();
+  const [title, setTitle] = useState();
+  const [date, setDate] = useState();
+  const [description, setDescription] = useState();
+  const [category, setCategory] = useState();
+  const [aims, setAims] = useState();
   const [confirmSection, setConfirmSection] = useState(false);
   const [messageSection, setMessageSection] = useState(false);
   const [showConfirmDeleteSection, setShowConfirmDeleteSection] =
-    useState(false);
+  useState(false);
   const [blankFieldAlert, setBlankFieldAlert] = useState(false);
   useEffect(() => {}, [blankFieldAlert, inputs]);
+  let blogId = params.blogId;
+  let blogData = ImageData[blogId];
+  if (!blogData) return notfound();
+  else {
+  let dateFormat = formatDate(blogData.date);
+  setInputs(blogData.valuesArray);
+  setImages(blogData.images);
+  setTitle(blogData.title);
+  setDate(dateFormat);
+  setDescription(blogData.description);
+  setCategory(blogData.category);
+  setAims(blogData.aims);
+  }
 
   function refreshPage() {
     router.push("/admin/updateBlog");
