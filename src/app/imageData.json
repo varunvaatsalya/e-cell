@@ -1,15 +1,73 @@
 {
-  "1714530083257": {
-    "title": "Varun Nidhi Lorem ipsum dolor sit amet ",
-    "date": "May 29, 2024",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, at!",
-    "category": "Insurence",
-    "valuesArray": ["consectetur adipisicing elit. Omnis, at!"],
-    "aims": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, at!",
+  "1714656027995": {
+    "title": "THE ENTREPRENEURIAL TIMES || FEB-MAR EDITION",
+    "date": "Apr 04, 2024",
+    "description": "With the AI start-ups raising the bar in the modern world to the latest strides made by industry giants like Amazon, RedBus, and Zoomcar; every milestone is meticulously curated within these pages.\n\nPresenting chapter two of the February - March edition of the Entrepreneurial Times! Offering unparalleled insights into the groundbreaking developments shaping our world.",
+    "category": "Marketing",
+    "valuesArray": [
+      " Amazon, RedBus, and Zoomcar"
+    ],
+    "aims": "Offering unparalleled insights into the groundbreaking developments shaping our world.",
     "images": [
-      "Image_1714530083257_s16qni.png",
-      "Image_1714530198795_wp8z51.png",
-      "Image_1714554533341_3mxadr.png"
+      "Image_1714656027995_6d10yq.png",
+      "Image_1714656027995_clulh4.png",
+      "Image_1714656027995_tg06da.png"
+    ]
+  },
+  "1714654910656": {
+    "title": "THE ENTREPRENEURIAL TIMES || JANUARY EDITION",
+    "date": "Feb 01, 2024",
+    "description": "Embarking on a new entrepreneurial journey: Chapter One”. 💼✨\nSo here we are re-starting the ocean of knowledge and innovation The Entrepreneurial Times for new-aged minds of our college and providing them with the insights of the various startups or businesses working currently in the world.",
+    "category": "Enterpreneur",
+    "valuesArray": [],
+    "aims": "",
+    "images": [
+      "Image_1714654910655_l7bxh0.png",
+      "Image_1714654910655_lis29z.png",
+      "Image_1714654910656_dbw7c7.png"
+    ]
+  },
+  "1714654483619": {
+    "title": "Global student Entrepreneur Award 2024",
+    "date": "Jan 30, 2024",
+    "description": "Dive into the heartbeat of innovation as the @nnfiet and @ecell_iet_lko in collaboration with @entrepreneursorg orchestrates a symphony of dreams by hosting the Global student Entrepreneur Award 2024 at Kalam hall Navyug Navachar foundation IET Lucknow. From visionary pitches to groundbreaking ideas, every moment is a testament to the entrepreneurial spirit that fuels the Entrepreneurial journey. GSEA draws a narrative of possibilities, crafting a future where innovation knows no bounds. Embrace the spark that ignites change and witness the birth of tomorrow’s success stories.\n\n✨Congratulations to Matiyari Technology Pvt. Ltd. From RECM innovation foundation. The stellar stars of GSEA & winning a grand prize of Rs 1 lakh! 🚀✨ Your innovation shines bright, and we can’t wait to witness your journey to new heights. Here’s to breaking barriers, chasing dreams, and making a mark in the world of technology.\n\nExpressing heartfelt gratitude to Vineet Kansal, Director of IET Lucknow, for your invaluable guidance and Support. Your guidance has been a beacon, shaping the path of success for all of us. Thank you for your inspiring vision and commitment to excellence.\n\nA special thanks to Dr. Anuj Kumar Sharma, Dean of Innovation Hub UP, & the innovation team. for your exceptional leadership and commitment to fostering innovation. Your dedication has been instrumental in creating a thriving hub for creativity and progress. Grateful for your inspiring guidance.\n\nUtmost gratitude to Seetalakshmi Srikumar, Pushkar Tripathi director of NNF & @sandyp2606 Manager of Incubation Centre.\nGrateful for your transformative leadership that paves the way for innovation and growth.",
+    "category": "Marketing",
+    "valuesArray": [
+      " Impedit, expedita itaque! Assumenda quis aut quaerat?",
+      "sit amet consectetur adipisicing elit. Cum, quis!"
+    ],
+    "aims": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "images": [
+      "Image_1714654483618_57nhcs.png",
+      "Image_1714655724980_k18gg0.png",
+      "Image_1714655724981_jcr1cw.png"
+    ]
+  },
+  "1714655545010": {
+    "title": "Venture Visionaries - The Startup Saga || WINNERS",
+    "date": "Dec 16, 2023",
+    "description": "Colleges foster a startup spirit by cultivating an environment rich in innovation and collaboration. Entrepreneurship programs, hackathons, and incubators provide students with the resources and mentorship needed to turn their ideas into viable startups. The freedom to explore diverse fields and the encouragement to take risks contribute to a culture where creativity and initiative thrive, preparing students for the dynamic challenges of the entrepreneurial world beyond academia.\n\n🧠 Test your startup savvy in our exclusive quiz – because the journey to success begins with knowledge.",
+    "category": "Marketing",
+    "valuesArray": [
+      " Entrepreneurship programs",
+      "Hackathons",
+      "Incubators"
+    ],
+    "aims": "preparing students for the dynamic challenges of the entrepreneurial world beyond academia.",
+    "images": [
+      "Image_1714656111285_8789mr.png",
+      "Image_1714656111286_u5ke9o.png"
+    ]
+  },
+  "1714655148026": {
+    "title": "HULT PRIZE AdMad Competition Winner",
+    "date": "Nov 26, 2023",
+    "description": "Yesterday, marked an extraordinary showcase of #innovation and #socialimpact as 39 teams participated in the #AdMad #competition of Hult Prize Foundation\n\nCongratulations to Team #Zenith, the champions of the day! Your dedication to transformative solutions has set a new standard for positive change.\n\nA well-deserved acknowledgment to the runner-up, #Inventronauts! Your creative spirit and commitment to impact are truly commendable.\n\nA big thank you to all 39 teams for their passion and ingenuity. Each project contributes to a brighter, more sustainable future. Let's continue collaborating and making a real difference!",
+    "category": "Marketing",
+    "valuesArray": [],
+    "aims": "",
+    "images": [
+      "Image_1714655148025_85j5hn.png"
     ]
   }
 }

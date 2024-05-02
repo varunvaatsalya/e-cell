@@ -404,7 +404,7 @@ export default function Home() {
             <span className="text-xl text-zinc-400 dark:text-zinc-700">
               &#9829;
             </span>{" "}
-            by Varun Gupta
+            by E-CELL TEAM
           </div>
         </div>
       </div>

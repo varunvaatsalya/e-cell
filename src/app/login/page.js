@@ -1,6 +1,27 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function Example() {
+  const router = useRouter();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  async function submitActions() {
+    const Data = { email, password };
+    let result = await fetch("/api/signin", {
+      method: "POST",
+      body: JSON.stringify(Data),
+    });
+    result = await result.json();
+    if (result.success) {
+      console.log("push")
+      router.push("/admin");
+    }
+  }
+
   return (
     <>
       <div className="flex min-h-screen flex-1 flex-col justify-center px-6 py-4 lg:px-8">
@@ -21,13 +42,13 @@ export default function Example() {
         </div>
         <hr className="w-full border border-gray-300 dark:border-gray-700 my-4" />
         <div className="mt-2 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
+          <form className="space-y-6" action={submitActions}>
             <div>
               <label
                 htmlFor="email"
-                className="font-medium leading-6 text-gray-700 dark:text-gray-200 "
+                className="font-medium leading-6 text-gray-700 dark:text-gray-200"
               >
-                Email address
+                Enter your Email address
               </label>
               <div className="mt-2">
                 <input
@@ -36,7 +57,11 @@ export default function Example() {
                   type="email"
                   autoComplete="email"
                   placeholder="email"
-                  title="Enter "
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                  title="Enter your email address"
                   required
                   className="p-2 w-full rounded-md bg-zinc-100 dark:bg-zinc-700 shadow-inner shadow-zinc-500 dark:shadow-zinc-900 placeholder:text-zinc-400"
                 />
@@ -49,22 +74,18 @@ export default function Example() {
                   htmlFor="password"
                   className="font-medium leading-6 text-gray-700 dark:text-gray-200 "
                 >
-                  Password
+                  Admin Password
                 </label>
-                <div className="text-sm">
-                  <a
-                    href="#"
-                    className="font-semibold text-indigo-500 hover:text-indigo-600"
-                  >
-                    Forgot password?
-                  </a>
-                </div>
               </div>
               <div className="mt-2">
                 <input
                   id="password"
                   name="password"
                   type="password"
+                  value={password}
+                  onChange={(e) => {
+                    setPassword(e.target.value);
+                  }}
                   autoComplete="current-password"
                   placeholder="Password"
                   required
@@ -76,32 +97,18 @@ export default function Example() {
             <div>
               <button
                 type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="my-8 flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Sign in
               </button>
             </div>
+            <p className="text-center text-blue-600 text-sm">
+              <Link href="/admin">Go to the admin page</Link>
+              
+            </p>
           </form>
-
-          <p className="mt-10 text-center text-sm text-gray-500">
-            Not a member?{" "}
-            <a
-              href="#"
-              className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
-            >
-              Start a 14 day free trial
-            </a>
-          </p>
         </div>
       </div>
     </>
   );
-}
-
-export function generateMetadata({ params }) {
-  return {
-    title: "E-CELL Admin Login",
-    description:
-      "This is official website of EnterpreneurShip cell of IET Lucknow",
-  };
 }

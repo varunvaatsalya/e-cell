@@ -1,11 +1,11 @@
 import Image from "next/image";
 import * as FaIcons from "react-icons/fa6";
 import ImageData from "../../imageData.json";
-import notfound from "../../not-found"
+import notfound from "../../not-found";
 
 function page({ params }) {
   let blogData = ImageData[params.blog];
-  if(!blogData) return notfound();
+  if (!blogData) return notfound();
   return (
     <>
       <div className="pt-6">
@@ -42,15 +42,16 @@ function page({ params }) {
         {/* Image gallery */}
         <div className="mx-auto mt-6 max-w-2xl lg:max-w-full lg:px-8">
           <div className="w-full flex flex-wrap justify-center md:gap-2 line-clamp-2">
-            {blogData.images.map((image, key) => (<Image
+            {blogData.images.map((image, key) => (
+              <Image
                 key={key}
                 height={1000}
                 width={1000}
                 src={`/images/${image}`}
                 alt="image"
                 className="object-contain min-h-96 w-auto md:rounded-xl"
-              />)
-            )}
+              />
+            ))}
           </div>
         </div>
 
@@ -75,36 +76,46 @@ function page({ params }) {
                 </p>
               </div>
             </div>
+            {blogData.valuesArray.length ? (
+              <div className="mt-10">
+                <h3 className="text-lg font-medium text-gray-900 dark:text-gray-200">
+                  Highlights
+                </h3>
 
-            <div className="mt-10">
-              <h3 className="text-lg font-medium text-gray-900 dark:text-gray-200">
-                Highlights
-              </h3>
-
-              <div className="mt-4">
-                <ul role="list" className="list-disc space-y-2 pl-4 text-base">
-                  {blogData.valuesArray.map((highlight) => (
-                    <li key="1" className="text-gray-400">
-                      <span className="text-gray-600 dark:text-gray-400">
-                        {highlight}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="mt-4">
+                  <ul
+                    role="list"
+                    className="list-disc space-y-2 pl-4 text-base"
+                  >
+                    {blogData.valuesArray.map((highlight) => (
+                      <li key="1" className="text-gray-400">
+                        <span className="text-gray-600 dark:text-gray-400">
+                          {highlight}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
+            ) : (
+              <></>
+            )}
 
-            <div className="mt-10">
-              <h2 className="text-lg font-medium text-gray-900 dark:text-gray-200">
-                Aims
-              </h2>
+            {blogData.aims ? (
+              <div className="mt-10">
+                <h2 className="text-lg font-medium text-gray-900 dark:text-gray-200">
+                  Aims
+                </h2>
 
-              <div className="mt-4 space-y-6">
-                <p className="text-base text-gray-600 dark:text-gray-400">
-                  {blogData.aims}
-                </p>
+                <div className="mt-4 space-y-6">
+                  <p className="text-base text-gray-600 dark:text-gray-400">
+                    {blogData.aims}
+                  </p>
+                </div>
               </div>
-            </div>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>

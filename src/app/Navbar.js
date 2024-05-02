@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`h-screen w-screen md:w-96 lg:w-96 xl:w-96 fixed z-10 bg-gray-100/[.99] dark:bg-gray-950/[.99] top-0 right-0 transition-transform duration-500 ${
+        className={`h-screen w-screen md:w-96 lg:w-96 xl:w-96 fixed z-30 bg-gray-100/[.99] dark:bg-gray-950/[.99] top-0 right-0 transition-transform duration-500 ${
           isVisible ? "transform translate-x-0" : "transform translate-x-full"
         }`}
       >
@@ -131,7 +131,7 @@ export default function Navbar() {
       </div>
       {isBtnVisible && (
         <div
-          className=" fixed z-20 right-4 md:right-6 lg:right-8 xl:right-8 h-16 rounded-lg text-2xl hover:cursor-pointer text-gray-100 hover:text-gray-300 transition duration-200 scale-75 md:scale-90 lg:scale-100 xl:scale-100 bg-black p-5"
+          className=" fixed z-40 right-4 md:right-6 lg:right-8 xl:right-8 h-16 rounded-lg text-2xl hover:cursor-pointer text-gray-100 hover:text-gray-300 transition duration-200 scale-75 md:scale-90 lg:scale-100 xl:scale-100 bg-black p-5"
           onClick={toggleSlide}
         >
             {!isVisible ? <FaIcons.FaBars /> : <ImIcons.ImCross />}
