@@ -1,4 +1,4 @@
-# [E-Cell Website](https://your-website-link.com)
+# [E-Cell Website](https://e-cell-ebon.vercel.app/)
 
 ## About
 
@@ -17,26 +17,26 @@ The website is built using the **NEXT JS**
 ## Screenshots
 
 ### Home Page
-![Home Page](path/to/homepage-image.png)
+![Home Page](public/home.png)
 
 The home page provides an overview of the latest E-Cell events, announcements, and news. It is designed to keep users updated with the most recent information regarding entrepreneurial activities and opportunities.
 
 ### Blogs Page
-![Blogs Page](path/to/blogs-image.png)
+![Blogs Page](public/blogs2.png)
+![Blogs Page](public/blogs.png)
 
 This page features blog posts written by E-Cell members, sharing their insights, experiences, and knowledge related to entrepreneurship. It allows users to read and explore various articles that help foster an entrepreneurial mindset.
 
 ### Admin Panel
-![Admin Panel](path/to/admin-image.png)
+![Admin Panel](public/AdminPanel.png)
 
 The admin panel offers a dashboard for managing website content. Authorized members can add, edit, or remove events, blog posts, and other relevant information with ease, ensuring the website stays updated.
 
 ### Content Upload Section
-![Content Upload Section](path/to/content-upload-image.png)
+![Content Upload Section](public/contentUpload.jpg)
 
 This section allows admins to upload and manage content, including blogs, announcements, and media files. It features an intuitive interface to streamline the content management process.
 
 ### Team Members Page
-![Team Members](path/to/team-members-image.png)
 
 The team members page introduces the core members of the E-Cell, highlighting their roles and contributions. It provides insights into the people driving the entrepreneurship initiatives within the college.
