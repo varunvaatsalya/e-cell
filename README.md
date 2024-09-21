@@ -33,7 +33,8 @@ This page features blog posts written by E-Cell members, sharing their insights,
 The admin panel offers a dashboard for managing website content. Authorized members can add, edit, or remove events, blog posts, and other relevant information with ease, ensuring the website stays updated.
 
 ### Content Upload Section
-![Content Upload Section](public/contentUpload.jpg)
+<img src="public/contentUpload.jpg" alt="Image description" width="400"/>
+
 
 This section allows admins to upload and manage content, including blogs, announcements, and media files. It features an intuitive interface to streamline the content management process.
 
